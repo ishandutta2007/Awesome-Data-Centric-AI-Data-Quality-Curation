@@ -1,90 +1,134 @@
 # Awesome-Data-Centric-AI-Data-Quality-Curation
 
-## Top Data-Centric AI & Data Quality Curation Ecosystem
+<div align="center">
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Label Error Detection, Data Curation & Self-Hosted Quality Scoring*  
-**Last updated: March 2026**
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Data-Centric AI and Data Quality Curation Banner" width="100%" />
+</p>
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Data-Centric AI & Data Quality Curation**. These tools help ML teams improve model performance by improving the data itself—detecting mislabeled examples, outliers, duplicates, and drift—covering everything from automated error detection libraries to commercial platforms for annotation, curation, and evaluation.
+# 🎯 Awesome Data-Centric AI & Data Quality Curation
 
-**Examples** include Cleanlab, Snorkel, Encord, Labelbox, V7, and cleanlab/cleanlab (the category leaders).
+### *A Curated Directory of SaaS Platforms & Open-Source Tools for Label Error Detection, Data Curation, and Self-Hosted Quality Scoring*
 
-**Open-source emphasis**: This section highlights every major active project for self-hosted data quality scoring, open-source label error detection, and community-driven curation—ideal for teams seeking to own their data pipeline without per-seat or per-row SaaS fees. The open-source landscape is anchored by **cleanlab**, the standard library for automated data issue detection with 11.7K+ stars , and **Snorkel**, the reference implementation for programmatic weak supervision .
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation?style=social" alt="GitHub forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation" alt="GitHub issues" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
+**Explore enterprise SaaS platforms, foundational Python libraries, and active learning engines to clean training datasets, detect label errors, remove out-of-distribution outliers, and automate weak supervision.**
 
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-- **[Cleanlab Studio](https://cleanlab.ai/studio/)**  
-  **The commercial no-code interface for cleanlab's automated data quality engine.** Ranks every datapoint by likelihood of having an issue, finds label errors and outliers, and provides an interface for efficiently re-labeling and fixing data . **Cut time spent on data quality by 1/3 and labeling spend by 5x–50x** according to the company . Supports tabular, text, image, video, and audio data. **Free to use at app.cleanlab.ai with demo data**; enterprise features via company email signup . Best for teams wanting Cleanlab's algorithms without writing code.
-
-- **[Snorkel Flow](https://snorkel.ai/)**  
-  **Programmatic labeling platform for bootstrapping datasets from domain expertise.** Users write labeling functions (heuristics, patterns, distant supervision rules) that Snorkel combines into probabilistic training labels . **Excels when labeled data is scarce or nonexistent**—enables creating 100k+ labeled examples in hours instead of months . **Tightly couples labeling with model training** for rapid iteration . Best for organizations with deep domain knowledge but no existing labels, especially in regulated NLP projects where rules can encode compliance requirements .
-
-- **[Encord](https://encord.com/)**  
-  **Multimodal data platform with active learning and curation built in.** Supports images, video, DICOM, documents, and audio, plus **RLHF-style evaluation workflows** for generative and multimodal models . **Encord Active** adds data curation and **label-error detection**—automatically surfacing likely mistakes for re-review . **Audit-grade traceability** useful in regulated industries . Pricing is quote-based with team plans . Best for teams combining vision, documents, and model-evaluation workflows who need curation alongside annotation.
-
-- **[Labelbox](https://labelbox.com/)**  
-  **Enterprise data platform with governance and workforce options.** Covers image, video, text, audio, PDFs, and geospatial tiles. **Catalog** for data management, model-assisted labeling (SAM 2 integration), active-learning-style prioritization, and **model evaluation** in one workspace . **QA is a strong point**: multi-step review queues, gold-set tasks, consensus scoring, and per-labeler analytics . **Free tier: 5,000 data rows, 3 users**; Starter from **$25/seat/month**; Enterprise includes SSO, SCIM, and on-prem options . Best for ML teams needing governance and workforce options in one place—costs scale quickly with volume .
-
-- **[V7 (Darwin / Go)](https://www.v7labs.com/)**  
-  **Best for medical imaging and document-heavy workflows.** **V7 Darwin** handles image, video, and 3D annotation with strong auto-annotate tools; **V7 Go** adds agentic automation for document extraction (receipts, invoices, contracts) with OCR for printed and handwritten text . **DICOM/NIfTI medical imaging support** makes it a favorite in healthcare, life sciences, and insurance . Pricing is custom-quoted by seats, data volume, and workflows . Best for regulated and visual-heavy domains needing strong automation out of the box.
-
-- **[SuperAnnotate](https://www.superannotate.com/)**  
-  **AI-assisted computer vision platform with optional managed annotation teams.** Supports image, video, text, audio, LiDAR point clouds, and documents. **Magnetic polygon tool** speeds complex outlines; foundation-model-assisted segmentation and a Python SDK for pipeline integration . **Multi-level review, per-annotator quality scores, and approve/disapprove states** make QA first-class. Free tier for small teams; paid plans quoted per seat plus usage . Best when computer vision is the core use case and outsourcing part of the workload is a possibility.
-
-## Open-Source GitHub Projects
-
-- **[cleanlab](https://github.com/cleanlab/cleanlab)**  
-  **The standard open-source library for automated data and label issue detection.** **Apache-2.0**, **11.7K+ GitHub stars** . **Works with any ML model** by operating on predicted probabilities or feature embeddings—no model-specific dependency . **Detects label errors, outliers, near-duplicates, IID violations, and underperforming groups** via `Datalab.find_issues()` . **`CleanLearning`** trains a robust version of any scikit-learn-compatible classifier by automatically filtering low-quality data before fitting . **Beyond standard classification**: multi-label data (image/document tagging), sequence prediction (entity recognition), and data labeled by multiple annotators . **Install**: `pip install cleanlab` . **Best for teams wanting the reference implementation** for data-centric AI with a proven track record of finding thousands of label errors in ImageNet, MNIST, and other benchmarks .
-
-- **[Snorkel (Open Source)](https://github.com/snorkel-team/snorkel)**  
-  **The reference implementation for programmatic weak supervision.** **Apache-2.0** . Enables writing labeling functions (heuristics, patterns, distant supervision) that are combined into probabilistic training labels—**bootstrapping datasets when manual annotation is too expensive or slow** . **Active maintenance has slowed** as the community shifted toward Snorkel Flow and LLM-based labeling sources, but the library remains the most cited reference implementation . **Best for teams wanting to start with weak supervision** before committing to the commercial platform.
-
-- **[Argilla](https://github.com/argilla-io/argilla)**  
-  **Data-centric NLP platform with weak supervision integrations.** **Apache-2.0** . Focused on **data quality curation for NLP**—annotation, review, and dataset management with human-in-the-loop workflows . **Best for NLP teams** wanting a self-hosted curation platform with weak supervision support.
-
-- **[fastdup](https://github.com/visual-layer/fastdup)**  
-  **Fast, free tool for generating insights from image and video datasets.** **1.9K+ stars** . Helps **enhance data quality and labels** while reducing data operation costs, with unmatched scalability for visual datasets . **Best for computer vision teams** needing rapid dataset quality assessment.
-
-- **[DataProfiler](https://github.com/capitalone/DataProfiler)**  
-  **What's in your data? Extract schema, statistics, and entities from datasets.** **Apache-2.0**, **1.6K+ stars** . **Best for structured data profiling** as a first step before curation.
-
-### Additional Strong Open-Source Options
-
-- **Data-Juicer** (7.2K+ stars, Apache-2.0) — Data processing for and with foundation models; covers cleaning, filtering, deduplication, and quality scoring for LLM training data [citation:14].
-- **DataFlow** (8.4K+ stars, Apache-2.0) — Easy data preparation with LLM-based operators and pipelines [citation:14].
-- **Curator** (1.8K+ stars, Apache-2.0) — Scalable data preprocessing and curation toolkit for LLMs [citation:14].
-- **text-dedup** (764+ stars, Apache-2.0) — All-in-one text de-duplication [citation:14].
-- **skweak** (MIT) — Snorkel-style weak supervision specialized for NLP and sequence labeling [citation:15].
-- **WRENCH** (Apache-2.0) — Benchmark and evaluation suite for weak supervision [citation:15].
-- **Autodistill** (Apache-2.0) — Foundation model labeling pipelines for computer vision [citation:15].
-
-**Frameworks for building custom systems**: Combine **cleanlab** for automated label error detection, **Snorkel** for programmatic labeling when data is scarce, and **Argilla** for human-in-the-loop NLP curation. For LLM training data, **Data-Juicer** and **DataFlow** provide scalable cleaning and filtering pipelines.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Data curation tools process training datasets that may contain sensitive or proprietary information; enforce access controls and validate data handling policies, especially when using SaaS platforms that ingest raw data.
-- **Tool choice depends on whether you need to clean existing data or create new labels.** **Cleanlab excels at auditing and cleaning existing datasets**—it found 4.4% of ImageNet training labels as likely incorrect, and retraining improved accuracy by over 1.5 percentage points . **Snorkel Flow excels when labeled data is scarce**—it bootstraps datasets from domain-expert rules rather than cleaning what exists . **Encord and Labelbox bundle curation with annotation and evaluation** for teams wanting one platform across the workflow . **Open-source cleanlab is genuinely production-ready** with Apache-2.0 licensing and active maintenance , while **Snorkel's open-source maintenance has slowed** . Validate whether you need cleaning (cleanlab), labeling from scratch (Snorkel), or an end-to-end platform (Labelbox, Encord) before committing.
+</div>
 
 ---
 
-**Made for ML engineers, data quality analysts, and teams building reliable training data pipelines.**  
-Let's make data-centric AI and data curation more open, auditable, and quality-driven.
+## 📑 Table of Contents
+
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS/Hosted Platforms](#-saashosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Frameworks for Building Custom Systems](#-frameworks-for-building-custom-systems)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [☕ Support](#-support)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#-disclaimer)
+
+---
+
+## 🌐 Sector Overview & Market Dynamics
+
+The global AI Data Management and Data Quality market is valued between **$25.5B and $45B** and is projected to surpass **$100B by 2030** at a compound annual growth rate (**CAGR**) of over **20% to 22%**, driven by the imperative need for clean training tokens and multimodal data curation for foundation models. The market remains **moderately to highly fragmented** rather than winner-take-all, featuring dynamic competition among specialized programmatic labeling vendors, multimodal curation startups, automated data-cleaning libraries, and established cloud hyperscalers converging on enterprise lakehouses.
+
+---
+
+## ☁️ SaaS/Hosted Platforms
+
+The following table benchmarks category-leading Data-Centric AI and data curation SaaS platforms. Companies are sorted in descending order of size by private valuation and annualized revenue scale.
+
+| Platform | Company Valuation / Revenue Scale | Specific Starting Price | Free Tier / Trial Limits | Core Focus & Data Modalities |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Snorkel Flow](https://snorkel.ai/)** | **$3.5B Valuation** (~$375M ARR; $580M+ total funding) | **$50,000/year** (Enterprise hosted application starting contract) | **No self-serve free tier** (Custom POC trial upon enterprise qualification) | Programmatic weak supervision, enterprise foundation model fine-tuning, complex NLP & structured data. |
+| **[Labelbox](https://labelbox.com/)** | **$1.25B Valuation** ($289M+ total funding raised) | **$0.10 / LBU** (Starter Tier usage-based pay-as-you-go) | **Free Forever**: 500 LBUs/month, up to 30 users, 50 projects, 10M data rows, 25 ontologies, 1,500 req/min | Multimodal catalog, model-assisted annotation (SAM 2), human-in-the-loop QA pipelines, and LLM evaluation. |
+| **[Encord](https://encord.com/)** | **~$350M–$450M Est. Valuation** ($110M funding; $60M Series C in Feb 2026) | **~$120/seat/month** (Team tier starting plan; custom Enterprise quotes) | **Free Starter Tier**: Up to 5 users, limited active annotation volume & community pipeline access | Multimodal AI data platform, active learning, Encord Active curation, DICOM/medical imaging, and RLHF. |
+| **[V7 (Darwin / Go)](https://www.v7labs.com/)** | **~$100M Valuation** ($33M Series B; $41M+ total funding) | **£150 (~$190)/user/month** (Darwin Business Tier starting plan) | **14-day Free Trial** (Includes full Darwin platform features and sample automated computer vision workflows) | High-precision computer vision annotation, V7 Go document agentic OCR, and native DICOM/NIfTI medical imaging. |
+| **[SuperAnnotate](https://www.superannotate.com/)** | **~$80M–$120M Est. Valuation** ($68.6M total funding; $50M Series B) | **Custom annual contract** (~$250–$300/user/month equiv. Starter tier) | **Free Tier**: Up to 3–5 users and 1,000 Orchestrate compute hours for automated pipelines | Computer vision & multimodal active learning, magnetic polygon segmentation, and multi-level QA workforce management. |
+| **[Cleanlab Studio](https://cleanlab.ai/studio/)** | **~$70M–$100M Est. Valuation** ($30M total funding; $25M Series A) | **$0.002/row processed** ($50–$100/month pay-as-you-go starting tier) | **Free Account**: Complimentary starter credits (~1,000 data rows / introductory TLM queries) | Automated no-code label error detection, dataset auditing, outlier discovery, and Trustworthy Language Model (TLM) scoring. |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+Explore the most popular open-source libraries for self-hosted data quality validation, automated label error identification, programmatic weak supervision, and LLM corpus curation. Sorted in descending order by GitHub Stars ⭐.
+
+| Repository | Stars | License | Primary Capabilities & Best For |
+| :--- | :--- | :--- | :--- |
+| **[roboflow/supervision](https://github.com/roboflow/supervision)** | [![Stars](https://img.shields.io/github/stars/roboflow/supervision?style=social&color=white)](https://github.com/roboflow/supervision/stargazers) | `Apache-2.0` | Comprehensive computer vision utility library: dataset loaders, visual format conversions, detections filtering, and active evaluation. |
+| **[great-expectations/great_expectations](https://github.com/great-expectations/great_expectations)** | [![Stars](https://img.shields.io/github/stars/great-expectations/great_expectations?style=social&color=white)](https://github.com/great-expectations/great_expectations/stargazers) | `Apache-2.0` | The leading standard for data quality testing, automated profiling, dataset validation pipelines, and production data documentation. |
+| **[cleanlab/cleanlab](https://github.com/cleanlab/cleanlab)** | [![Stars](https://img.shields.io/github/stars/cleanlab/cleanlab?style=social&color=white)](https://github.com/cleanlab/cleanlab/stargazers) | `Apache-2.0` | Standard library for automated label error detection, outlier extraction, duplicate removal, and training robust models with `CleanLearning`. |
+| **[evidentlyai/evidently](https://github.com/evidentlyai/evidently)** | [![Stars](https://img.shields.io/github/stars/evidentlyai/evidently?style=social&color=white)](https://github.com/evidentlyai/evidently/stargazers) | `Apache-2.0` | Open-source MLOps and LLM evaluation platform for dataset drift detection, data quality monitoring, and regression test suites. |
+| **[datajuicer/data-juicer](https://github.com/datajuicer/data-juicer)** | [![Stars](https://img.shields.io/github/stars/datajuicer/data-juicer?style=social&color=white)](https://github.com/datajuicer/data-juicer/stargazers) | `Apache-2.0` | One-stop multi-modal data processing suite for foundation models: 100+ operators for filtering, deduplication, quality scoring, and synthesis. |
+| **[snorkel-team/snorkel](https://github.com/snorkel-team/snorkel)** | [![Stars](https://img.shields.io/github/stars/snorkel-team/snorkel?style=social&color=white)](https://github.com/snorkel-team/snorkel/stargazers) | `Apache-2.0` | Landmark framework for programmatic weak supervision; write labeling functions (rules, heuristics) and combine them into probabilistic training labels. |
+| **[argilla-io/argilla](https://github.com/argilla-io/argilla)** | [![Stars](https://img.shields.io/github/stars/argilla-io/argilla?style=social&color=white)](https://github.com/argilla-io/argilla/stargazers) | `Apache-2.0` | Human-in-the-loop and feedback curation platform for LLM alignment, preference tuning (RLHF/DPO), and programmatic text annotation. |
+| **[whylabs/whylogs](https://github.com/whylabs/whylogs)** | [![Stars](https://img.shields.io/github/stars/whylabs/whylogs?style=social&color=white)](https://github.com/whylabs/whylogs/stargazers) | `Apache-2.0` | Lightweight statistical profiling library enabling mathematical logging of tabular, text, and multimodal data distribution shifts. |
+| **[autodistill/autodistill](https://github.com/autodistill/autodistill)** | [![Stars](https://img.shields.io/github/stars/autodistill/autodistill?style=social&color=white)](https://github.com/autodistill/autodistill/stargazers) | `Apache-2.0` | Uses large vision foundation models to automatically label training datasets and distill them into lightweight, production-ready edge models. |
+| **[visual-layer/fastdup](https://github.com/visual-layer/fastdup)** | [![Stars](https://img.shields.io/github/stars/visual-layer/fastdup?style=social&color=white)](https://github.com/visual-layer/fastdup/stargazers) | `Custom Free` | High-performance C++ engine for image and video data curation: detects duplicates, blurriness, dark images, outliers, and wrong annotations. |
+| **[capitalone/DataProfiler](https://github.com/capitalone/DataProfiler)** | [![Stars](https://img.shields.io/github/stars/capitalone/DataProfiler?style=social&color=white)](https://github.com/capitalone/DataProfiler/stargazers) | `Apache-2.0` | Automated data profiling toolkit to identify schema structures, statistical profiles, and sensitive/PII data across structured and unstructured datasets. |
+| **[ChenghaoMou/text-dedup](https://github.com/ChenghaoMou/text-dedup)** | [![Stars](https://img.shields.io/github/stars/ChenghaoMou/text-dedup?style=social&color=white)](https://github.com/ChenghaoMou/text-dedup/stargazers) | `Apache-2.0` | Production text deduplication algorithms (Exact Match, MinHash, SimHash, Bloom Filters) optimized for massive pretraining corpora. |
+| **[Babelscape/skweak](https://github.com/Babelscape/skweak)** | [![Stars](https://img.shields.io/github/stars/Babelscape/skweak?style=social&color=white)](https://github.com/Babelscape/skweak/stargazers) | `MIT` | Python toolkit for weak supervision specialized in NLP and named entity recognition (NER), applying Hidden Markov Models over noisy annotators. |
+| **[JieyuZ2/wrench](https://github.com/JieyuZ2/wrench)** | [![Stars](https://img.shields.io/github/stars/JieyuZ2/wrench?style=social&color=white)](https://github.com/JieyuZ2/wrench/stargazers) | `Apache-2.0` | Benchmark platform and toolkit for weak supervision, comparing generative label aggregators and end-to-end classification algorithms. |
+
+---
+
+## 🛠️ Frameworks for Building Custom Systems
+
+When designing an in-house enterprise data-centric AI pipeline, modern engineering teams combine modular open-source components:
+
+- **Auditing & Label Cleansing**: Use [cleanlab](https://github.com/cleanlab/cleanlab) to inspect model predictions, compute label confidence metrics, and identify corrupted training targets before training.
+- **Weak Supervision & Dataset Bootstrapping**: Implement [snorkel](https://github.com/snorkel-team/snorkel) or [skweak](https://github.com/Babelscape/skweak) when expert labels are unavailable and domain heuristics can generate training priors.
+- **Quality Guardrails & Schema Contracts**: Deploy [great_expectations](https://github.com/great-expectations/great_expectations) and [whylogs](https://github.com/whylabs/whylogs) to block downstream pipeline execution when incoming feature distributions degrade.
+- **Pretraining & Multi-Modal Curation**: Leverage [data-juicer](https://github.com/datajuicer/data-juicer), [fastdup](https://github.com/visual-layer/fastdup), and [text-dedup](https://github.com/ChenghaoMou/text-dedup) to filter noise, duplicates, and artifacts at multi-gigabyte scale.
+- **Human-in-the-Loop Feedback**: Deploy [argilla](https://github.com/argilla-io/argilla) for expert-in-the-loop review queues, RLHF feedback, and active dataset curation.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions from researchers, data engineers, and maintainers are warmly welcome!
+
+1. 🍴 **Fork** this repository.
+2. 🌿 Create a new branch: `git checkout -b feature/add-new-tool`.
+3. 📝 Add your entry to `README.md` following the tabular format (including valid links, pricing, free tier limits, star badges, and factual descriptions).
+4. 🚀 Push your branch and open a Pull Request.
+
+---
+
+## ☕ Support
+
+If you found this curated list helpful for your machine learning workflows or dataset curation pipelines, please consider supporting the project:
+
+- ⭐ **Star** this repository to help others discover it.
+- 🍴 **Fork** and share it with your data science peers.
+- ☕ **Sponsor the Maintainer**: Support ongoing curation, open-source benchmarks, and developer tools via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This repository is a **community-curated index** and is not officially affiliated with or endorsed by any vendor mentioned.
+- Data curation tools process training datasets that may contain sensitive, personal, or proprietary records. Always ensure adequate data governance, review third-party privacy terms, and enforce VPC encryption when evaluating hosted SaaS products.
+- Tool selection should follow specific engineering needs: **Cleanlab** specializes in discovering errors in existing labeled data; **Snorkel** specializes in programmatic synthesis when manual labels are lacking; and end-to-end suites like **Labelbox** and **Encord** combine annotation workforces with active dataset curation.
+
+---
+
+<div align="center">
+  <sub>Maintained with ❤️ by <a href="https://github.com/ishandutta2007">Ishan Dutta</a> and the global open-source AI community.</sub>
+</div>
