@@ -1,6 +1,6 @@
 # Awesome-Data-Centric-AI-Data-Quality-Curation
 
-# Top Data-Centric AI & Data Quality Curation Ecosystem
+## Top Data-Centric AI & Data Quality Curation Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Label Error Detection, Data Curation & Self-Hosted Quality Scoring*  
