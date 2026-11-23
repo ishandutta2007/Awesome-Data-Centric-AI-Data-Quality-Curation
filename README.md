@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation?style=social" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation" alt="GitHub issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Data-Centric-AI-Data-Quality-Curation" alt="License" /></a>
@@ -61,9 +61,9 @@ The following table benchmarks category-leading Data-Centric AI and data curatio
 
 ## 💻 Open-Source GitHub Projects
 
-Explore the most popular open-source libraries for self-hosted data quality validation, automated label error identification, programmatic weak supervision, and LLM corpus curation. Sorted in descending order by GitHub Stars ⭐.
+Explore the most popular open-source libraries for self-hosted data quality validation, automated label error identification, programmatic weak supervision, and LLM corpus curation. Sorted in descending order by GitHub_Stars ⭐.
 
-| Repository | Stars | License | Primary Capabilities & Best For |
+| Repository | GitHub_Stars | License | Primary Capabilities & Best For |
 | :--- | :--- | :--- | :--- |
 | **[roboflow/supervision](https://github.com/roboflow/supervision)** | [![Stars](https://img.shields.io/github/stars/roboflow/supervision?style=social&color=white)](https://github.com/roboflow/supervision/stargazers) | `Apache-2.0` | Comprehensive computer vision utility library: dataset loaders, visual format conversions, detections filtering, and active evaluation. |
 | **[great-expectations/great_expectations](https://github.com/great-expectations/great_expectations)** | [![Stars](https://img.shields.io/github/stars/great-expectations/great_expectations?style=social&color=white)](https://github.com/great-expectations/great_expectations/stargazers) | `Apache-2.0` | The leading standard for data quality testing, automated profiling, dataset validation pipelines, and production data documentation. |
@@ -100,7 +100,7 @@ Contributions from researchers, data engineers, and maintainers are warmly welco
 
 1. 🍴 **Fork** this repository.
 2. 🌿 Create a new branch: `git checkout -b feature/add-new-tool`.
-3. 📝 Add your entry to `README.md` following the tabular format (including valid links, pricing, free tier limits, star badges, and factual descriptions).
+3. 📝 Add your entry to `README.md` following the tabular format (including valid links, pricing, free tier limits, Stars_Badges, and factual descriptions).
 4. 🚀 Push your branch and open a Pull Request.
 
 ---
